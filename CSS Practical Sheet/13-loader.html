@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            position: relative;
+        }
+        .loader{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border-top: 4px dashed  black;
+            border-radius: 50%;
+            top: 200px;
+            left: 600px;
+            animation: animation 1s linear infinite;
+        }
+        @keyframes animation{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        p{
+            position: absolute;
+            font-size: 30px;
+            top: 250px;
+            left: 660px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="loader"></div>
+        <p>loader...</p>
+    </div>
+</body>
+</html>

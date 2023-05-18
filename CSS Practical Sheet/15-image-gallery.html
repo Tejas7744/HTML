@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        position: relative;
+        height: 500px;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background-color: rgb(13, 199, 137);
+    }
+    .main-1{
+        position: absolute;
+        top: 20px;
+        left: 150px;
+    }
+    img{
+        /* height: 200px; */
+        /* width: 200px; */
+        border: 2px solid green;
+        border-radius: 10px;
+        box-shadow: 3px 0px 5px black;
+    }
+    .main .div1 img{
+        height: 160px;
+        width: 220px;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        transition: 2s all ease;
+    }
+    .main .div2 img{
+        height: 150px;
+        width: 210px;
+        position: absolute;
+        top: 70px;
+        left: 290px;
+        transition: 2s all linear;
+    }
+    .main .div3 img{
+        height: 230px;
+        width: 280px;
+        position: absolute;
+        top: 20px;
+        left: 550px;
+        transition: 2s all linear;
+    }
+    .main .div4 img{
+        height: 180px;
+        width: 220px;
+        position: absolute;
+        top: 219px;
+        left: 20px;
+        transition: 2s all linear;
+        transform: rotate(-30deg);
+    }
+    .main .div5 img{
+        height:250px ;
+        width: 300px;
+        position: absolute;
+        top:218px ;
+        left: 880px;
+        transition: 2s all linear;
+    }
+    .main .div6 img {
+        height:190px ;
+        width: 220px;
+        position: absolute;
+        top:258px ;
+        left: 550px;
+        transition: 2s all linear;
+    }
+    .main .div7 img{
+        height: 150px;
+        width: 210px;
+        position: absolute;
+        top: 228px;
+        left: 290px;
+        transition: 2s all linear;
+    }
+    .main .div8 img {
+        height: 190px;
+        width: 220px;
+        position: absolute;
+        top: 20px;
+        left: 880px;
+        transition: 2s all linear;
+    }
+    .div1 img:hover{
+        transform: rotate(100deg);
+    }
+    .div2 img:hover{
+        transform: matrix(1, 0, 1, 1, 0, 1);
+    }
+    .div3 img:hover{
+        transform: rotateY(150deg);
+    }
+    .div4 img:hover{
+        transform: rotate(250deg);
+    }
+    .div5 img:hover{
+        transform: rotatex(120deg);
+    }
+    .div6 img:hover{
+        transform: rotate(200deg);
+    }
+    .div7 img:hover{
+        transform: scale(1.5);
+    }
+    .div8 img:hover{
+        transform: rotatex(-60deg) rotateY(60deg) rotateZ(360deg);
+    }
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="main-1">
+            <div class="div1">
+                <img src="16.jfif" alt="">
+            </div>
+            <div class="div2">
+                <img src="17.jpg" alt="">
+            </div>
+            <div class="div3">
+                <img src="18.jpg" alt="">
+            </div>
+            <div class="div4">
+                <img src="19.webp" alt="">
+            </div>
+            <div class="div5">
+                <img src="20.jpg" alt="">
+            </div>
+            <div class="div6">
+                <img src="21.webp" alt="">
+            </div>
+            <div class="div7">
+                <img src="Garden.jpg" alt="">
+            </div>
+            <div class="div8">
+                <img src="parachute.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

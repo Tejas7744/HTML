@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body{
+            background: radial-gradient(orange,pink,cyan,crimson);
+        }
+        h1::after{
+            content: "\2014";
+        }
+        h1::before{
+            content: "\2014";
+        }
+        .div{
+            border: 2px solid black;
+            width:20%;
+            text-align: center;
+            height: 200px;
+            position: relative;
+            margin: 200px auto;
+        }
+        .div input{
+            height: auto;
+            width: 250px;
+        }
+        button{
+            height: 30px;
+            width: 100px;
+            position: absolute;
+            right: 25px;
+            color: whitesmoke;
+            background-color: blue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+     <h1>Login</h1>
+     <input type="text" placeholder="Enter Name"><br><br>
+     <input type="text" placeholder="Enter Password"><br><br>
+     <button>Login <i class="fa-solid fa-forward"></i></button>
+    </div>
+</body>
+</html>

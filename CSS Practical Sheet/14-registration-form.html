@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(24, 245, 49);
+        }
+        .regform{
+            height: 720px;
+            width: 50%;
+            padding: 40px;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+            /* text-align: center; */
+            background-color: whitesmoke; 
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .row .col-2 input {
+            height: 25px;
+            width: 350px;
+            
+        }
+        .row{
+            display: flex;
+            padding: 10px;
+            
+        }
+        .row .col-1{
+            flex: 1;
+        }
+        .row .col-2{
+            flex: 3;
+        }
+        .row .col-3 {
+            margin-right: 370px;
+        }
+        .row .checkbox{
+            margin-left: 245px;
+        }
+        button{
+            height: 30px;
+            width: 355px;
+            color: whitesmoke;
+            background-color: blue;
+            margin-left: 80px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="regform">
+        <h1>Registration For Job</h1>
+        <div class="row">
+               <div class="col-1">
+                  <label for="fname">First Name:</label>
+               </div>
+                <div class="col-2">
+                   <input type="text" placeholder="Enter First Name">
+                </div>
+         </div>
+         <div class="row">
+                <div class="col-1">
+                      <label for="mname">Mobile Name:</label>
+                </div>
+                 <div class="col-2">
+                      <input type="" placeholder="Enter Mobile Name">
+                 </div>
+          </div>
+          <div class="row">
+                    <div class="col-1">
+                        <label for="lname">Last Name:</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" placeholder="Enter Last Name">
+                    </div>
+           </div>
+           <div class="row">
+                    <div class="col-1">
+                        <label for="aname">Address:</label>
+                    </div>
+                    <div class="col-2">
+                        <textarea name="" id="" cols="45" rows="10" placeholder="Enter Address"></textarea>
+                    </div>
+           </div>
+           <div class="row">
+            <div class="col-1">
+                <label for="dname">Date Of Birth:</label>
+            </div>
+            <div class="col-2">
+                <input type="date">
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-1">
+                <label for="gname">Gender:</label>
+            </div>
+            <div class="col-3">
+                <input type="radio" name="radio1">Male
+                <input type="radio" name="radio1">Female
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-1">
+                <label for="ename">Experience:</label>
+            </div>
+            <div class="col-2">    
+            <select name="" id="">
+                <option value="">Select</option>
+                <option value="">Python</option>
+                <option value="">Java script</option>
+                <option value="">Node js</option>
+                <option value="">React js</option>
+            </select>
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-1">
+                <label for="mno">Mobile Number:</label>
+            </div>
+            <div class="col-2">
+                <input type="number" placeholder="Enter Mobile No.">
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-1">
+                <label for="ename">Email id:</label>
+            </div>
+            <div class="col-2">
+                <input type="text" placeholder="Enter Mail">
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-1">
+                <label for="cname">Create Password:</label>
+            </div>
+            <div class="col-2">
+                <input type="text" placeholder="Enter Password">
+            </div>
+           </div>
+                <div class="row">
+                    <div class="checkbox">
+                        <input type="checkbox">Show Password:
+                    </div>
+                </div>
+                <div class="button">
+                    <button>Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
