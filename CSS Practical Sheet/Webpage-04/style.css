@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ===============header============ */
+header {
+    position: fixed;
+    z-index: 1415;
+    width: 100%;
+    top: 0;
+}
+
+header .flexbox {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .margin {
+    margin: 0px 80px;
+}
+
+header .logo {
+    flex: 1;
+}
+
+header .nav {
+    flex: 4;
+}
+
+header .icon {
+    flex: 1;
+}
+
+header .btn span {
+    padding: 5px 14px;
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+}
+
+header .nav ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: end;
+}
+
+header .nav ul li a {
+    color: grey;
+    transition: 0.5s all ease;
+    text-transform: uppercase;
+}
+
+header .nav ul li a:hover {
+    color: black;
+}
+
+header .icon {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    align-items: center;
+    justify-content: end;
+    color: chocolate;
+    transition: 0.5s all ease;
+}
+
+header .icon:hover {
+    color: black;
+}
+
+/* ============home page============ */
+.h1 {
+    background-image: url(./images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1 .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1 .txt h1 {
+    font-size: 80px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.h1 .cup img {
+    padding: 202px 0px 130px 0px;
+}
+
+.h1 .txt h3 {
+    padding-bottom: 20px;
+    color: chocolate;
+    font-size: 25px;
+}
+
+.h1 .txt p {
+    padding-bottom: 30px;
+}
+
+.h1 .txt .button .btn-1 {
+    height: 50px;
+    width: 120px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: rgb(47, 45, 45);
+    color: white;
+    transition: 0.5s all ease;
+}
+
+.h1 .txt .button .btn-1:hover {
+    background-color: chocolate;
+    color: white;
+    border: none;
+}
+
+.h1 .txt .button .btn-2 {
+    height: 50px;
+    width: 120px;
+    border-radius: 15px;
+    background-color: rgb(47, 45, 45);
+    color: white;
+}
+
+/* ===============our coffer=============== */
+.sec-2 h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sec-2 .s-margin {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sec-2 .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.sec-2 .main .img-1 img {
+    height: auto;
+    width: 350px;
+}
+
+.sec-2 .main .img-1 h2 {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.sec-2 .main .img-1 h4 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: grey;
+}
+
+.sec-2 .main .img-1 button {
+    height: 50px;
+    width: 150px;
+    color: brown;
+    background-color: white;
+    border: 2px solid brown;
+    border-radius: 10px;
+    margin-left: 105px;
+}
+
+.sec-2 .main .img-1 button:hover {
+    height: 50px;
+    width: 150px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 105px;
+}
+
+/* ==================== About Shop===================*/
+.sec-3 h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sec-3 .mar {
+    margin-left: 300px;
+    margin-right: 100px;
+}
+
+.sect-3 h1 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.sec-3 .main {
+    position: relative;
+}
+
+.sec-3 .main .int-img {
+    padding-bottom: 100px;
+    margin-top: 60px;
+}
+
+
+.sec-3 .main .int-img img {
+    height: 600px;
+    max-width: 100%;
+}
+
+.sec-3 .main .text {
+    position: absolute;
+    height: 440px;
+    width: 550px;
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: 0 0 50px 0;
+    padding: 20px;
+    top: 70px;
+    right: 700px;
+}
+
+.sec-3 .main .text p {
+    padding-bottom: 30px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+.sec-3 .main .text h2 {
+    font-size: 32px;
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sec-3 .main .text button {
+    height: 50px;
+    width: 120px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid brown;
+    color: brown;
+    background-color: white;
+}
+
+.sec-3 .main .text button:hover {
+    color: black;
+    border: 2px solid black;
+}
+
+/* ===============Custmerce================= */
+.p1 {
+    background-image: url(./images/client-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p1 h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.p1 .main .box-1 {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin-left: 140px;
+}
+
+
+.p1 .main .text {
+    width: 50%;
+}
+
+.p1 .main .text h2 {
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
+
+/* ================Our blog============== */
+.p2 .margin {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.p2 h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.p2 .flex {
+    position: relative;
+}
+
+.p2 .flex .april {
+    position: absolute;
+    height: 60px;
+    width: 120px;
+    background-color: brown;
+    color: white;
+    top: -15px;
+    left: -15px;
+    display: grid;
+    place-content: center;
+    padding: 05px;
+}
+
+.p2 .flex {
+    display: flex;
+    gap: 20px;
+}
+
+.p2 .flex .img {
+    box-shadow: 0 0 30px 0;
+}
+
+.p2 .flex .img img {
+    height: auto;
+    max-width: 100%;
+}
+
+.p2 .flex .img .text {
+    background-color: white;
+    padding: 20px;
+}
+
+.p2 .flex .img .text h3 {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.p2 .flex .img .text p {
+    color: grey;
+    padding-bottom: 20px;
+}
+
+.p2 .flex button {
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    color: brown;
+    border: 2px solid brown;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin-left: 220px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.p2 .flex button:hover {
+    color: black;
+    border: 2px solid black;
+}
+
+.p2 .flex .box-2 .aprilfool {
+    position: absolute;
+    height: 60px;
+    width: 120px;
+    background-color: brown;
+    color: white;
+    top: -15px;
+    right: -15px;
+    display: grid;
+    place-content: center;
+    padding: 05px;
+}
+
+/* ===============Get In Touch============= */
+.p3 h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.p3 .text form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.p3 .text .name_text {
+    width: 50%;
+    float: center;
+    font-size: 16px;
+    color: #2e2e2d;
+    border: 0;
+    background-color: #efefef;
+    padding: 11px 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-family: Poppins, sans-serif;
+}
+
+.p3 .text .mail_text {
+    width: 50%;
+    float: center;
+    font-size: 16px;
+    color: #2e2e2d;
+    border: 0;
+    background-color: #efefef;
+    padding: 11px 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-family: Poppins, sans-serif;
+}
+
+.p3 .text .phone_text {
+    width: 50%;
+    float: center;
+    font-size: 16px;
+    color: #2e2e2d;
+    border: 0;
+    background-color: #efefef;
+    padding: 11px 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-family: Poppins, sans-serif;
+}
+
+.p3 .text .add_text {
+    width: 50%;
+    float: center;
+    font-size: 16px;
+    color: #2e2e2d;
+    border: 0;
+    background-color: #efefef;
+    padding: 11px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    font-family: Poppins, sans-serif;
+}
+
+.p3 .text .send {
+    height: 50px;
+    width: 120px;
+    background-color: chocolate;
+    border: 2px solid transparent;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.p3 .text .send:hover {
+    background-color: #373735;
+    color: white;
+}
+
+
+/* ==============Api============== */
+.p4 h6 {
+    color: #51514e;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+}
+
+/* ===========Footer=============== */
+.p5 {
+    background-image: url(./images/footer-bg.png);
+
+}
+
+.p5 .text {
+    text-align: center;
+    color: white;
+}
+
+.p5 .text h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: bolder;
+}
+
+.p5 .text p {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.p5 .text .fa-envelope {
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.p5 .text span:hover {
+    color: chocolate;
+}
+
+.p5 .text span a {
+    color: white;
+}
+
+.p5 .text span a:hover {
+    color: chocolate;
+}
+
+.p5 .text .flex {
+    display: flex;
+    background-color: chocolate;
+}
+
+.p5 .text .address {
+    flex: 2;
+    height: auto;
+    max-width: 100%;
+}
+
+.p5 .text .address p a:hover {
+    color: black;
+}
+
+.p5 .text .address p a {
+    color: white;
+}
+
+.p5 .text .icons {
+    padding-right: 150px;
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.p5 .text .icons .book {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    display: grid;
+    place-content: center;
+    background-color: white;
+    color: black;
+}
+
+.p5 .text .icons .twit {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    display: grid;
+    place-content: center;
+    background-color: white;
+    color: black;
+}
+
+.p5 .text .icons .link {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    display: grid;
+    place-content: center;
+    background-color: white;
+    color: black;
+}
+
+.p5 .text .icons .insta {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    display: grid;
+    place-content: center;
+    background-color: white;
+    color: black;
+}
+/* =============The End=============== */
