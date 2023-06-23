@@ -1,0 +1,959 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* =================header=================== */
+.header {
+    background-color: black;
+    color: white;
+}
+
+.margin {
+    margin: 0px 20px;
+}
+
+.padding {
+    padding: 25px;
+}
+
+.header .flexbox {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.header .flexbox .icon ul {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.header .flexbox .contact ul {
+    display: flex;
+    gap: 27px;
+    font-size: 18px;
+}
+
+.header .flexbox .icon {
+    flex: 1;
+}
+
+.header .flexbox .contact {
+    flex: 0.9;
+}
+
+li:hover {
+    color: blue;
+}
+
+.margin {
+    margin: 0px 10px;
+}
+
+.padding {
+    padding: 20px;
+}
+
+/* =========home page============ */
+.head-1 .padding {
+    padding: 10px;
+}
+
+.head-1 .margin {
+    margin-top: 20px;
+}
+
+.head-1 .flex-nav .brand-name h1 span {
+    color: teal;
+    letter-spacing: -3px;
+}
+
+.head-1 .flex-nav .brand-name h1 {
+    color: white;
+}
+
+.head-1 .fa-hand {
+    position: absolute;
+    left: 182px;
+    top: 80px;
+    color: teal;
+}
+
+.head-1 .flex-nav .nav-bar ul {
+    display: flex;
+    margin-top: -30px;
+    margin-left: 775px;
+    gap: 25px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.head-1 .flex-nav .nav-bar ul li a {
+    color: white;
+}
+
+.head-1 .flex-nav .nav-bar ul li a:hover {
+    color: #03c1be;
+}
+
+.head-1 .flex-nav .nav-bar ul li .fa-solid {
+    color: white;
+}
+
+.head-1 .flex-nav .nav-bar ul li a:hover .fa-angle-down {
+    transform: rotate(180deg);
+    color: #03c1be;
+}
+
+.head-1 .flex-nav .nav-bar ul li a:hover .fa-phone {
+    color: #03c1be;
+}
+
+.head-1 .flex-nav .nav-bar ul li a:hover .fa-shop {
+    color: #03c1be;
+}
+
+.show-1 {
+    display: none;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-1 {
+    display: block;
+    position: absolute;
+    background: rgb(250, 47, 237);
+    margin-left: -20px;
+    border-radius: 10px;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-1 ul li {
+    width: 60px;
+    background: transparent;
+    border-bottom: 1px dotted black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-1 ul li:hover a {
+    color: aqua;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-1 ul li a {
+    color: black;
+}
+
+/* ===========show-2============= */
+.show-2 {
+    display: none;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-2 {
+    display: block;
+    position: absolute;
+    background: rgb(250, 47, 237);
+    margin-left: -20px;
+    border-radius: 10px;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-2 ul {
+    display: block;
+    margin: 10px;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-2 ul li {
+    width: 60px;
+    background: transparent;
+    border-bottom: 1px dotted black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-2 ul li:last-child {
+    border-bottom: none;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-2 ul li:hover a {
+    color: aqua;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-2 ul li a {
+    color: black;
+}
+
+/* ================Show-3============== */
+.show-3 {
+    display: none;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-3 {
+    display: block;
+    position: absolute;
+    background: rgb(250, 47, 237);
+    margin-left: -20px;
+    border-radius: 10px;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-3 ul {
+    display: block;
+    margin: 10px;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-3 ul li {
+    width: 100px;
+    background: transparent;
+    border-bottom: 1px dotted black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-3 ul li:last-child {
+    border-bottom: none;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-3 ul li:hover a {
+    color: aqua;
+}
+
+.head-1 .flex-nav .nav-bar ul li:hover .show-3 ul li a {
+    color: black;
+}
+
+.head-1 .flex-nav .nav-bar span{
+    color: #17e7e4;
+    display: none;
+}
+
+/* ===========home page text=========== */
+.head-2 .text {
+    font-size: x-large;
+    color: white;
+    text-shadow: -4px 1px 4px black;
+}
+
+.head-2 .text h1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.head-2 .text button {
+    height: 40px;
+    width: 120px;
+    border: 3px solid black;
+    border: none;
+    border-radius: 10px;
+    font-size: medium;
+    background-color: rgb(45, 194, 194);
+    color: white;
+}
+
+.head-2 .text button:hover {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.head-2 .margin {
+    margin-left: 180px;
+    margin-top: 100px;
+}
+
+.head-2 .padding {
+    padding: 107px 10px;
+}
+
+/* ===============homepage content-2===============  */
+.head-3 {
+    color: white;
+}
+
+.head-3 .margin {
+    margin-left: 175px;
+}
+
+.head-3 .flexbox .learner p {
+    padding-bottom: 50px;
+}
+
+.head-3 .flexbox {
+    display: flex;
+}
+
+.head-3 .flexbox .fa-solid {
+    font-size: xx-large;
+}
+
+.head-3 .flexbox .name:hover i {
+    color: #03c1be;
+}
+
+.head-3 .flexbox .name:hover h3 {
+    color: #03c1be;
+}
+
+/* ====================homepage content-3=============== */
+.head-4 .flexbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px 0px 0px 0px;
+}
+
+.head-4 {
+    background-color: white;
+    color: black;
+}
+
+.head-4 .flexbox .text-1 h2 {
+    font-size: xx-large;
+    text-transform: capitalize;
+}
+
+.head-4 .flexbox .text-1 {
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+/* ===================Violence================ */
+.violence {
+    background-color: rgb(231, 253, 253);
+}
+
+.violence .left-img {
+    background: url(../images/banner2.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: 600px;
+}
+
+.violence .left-img {
+    display: grid;
+    place-content: center;
+}
+
+.violence .left-img h1 {
+    color: white;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.violence .flexbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+}
+
+.violence .rightbox .title {
+    padding-top: 40px;
+}
+
+.violence .left-img::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.723);
+    z-index: -1;
+}
+
+.violence .rightbox .icon {
+    display: flex;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.violence .rightbox .icon h1:hover {
+    color: teal;
+}
+
+.violence .rightbox .icon span {
+    color: teal;
+}
+
+.violence .rightbox .icon span:hover {
+    color: black;
+}
+
+.violence .rightbox .text p {
+    padding-top: 10px;
+}
+
+/* ==================We support always================== */
+section {
+    position: relative;
+    background-color: rgb(26, 227, 227);
+}
+
+section img {
+    height: 100%;
+    max-width: 100%;
+}
+
+section .txt {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    color: aliceblue;
+    padding: 10px;
+}
+
+section .txt h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+section .txt h5 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* ==================What we done================== */
+.done {
+    background-color: rgb(26, 227, 227);
+}
+
+.done .d-padding {
+    padding: 100px 0px;
+}
+
+.done .d-margin {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.done .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    text-transform: capitalize;
+    gap: 30px;
+}
+
+.done .grid .compains h1 {
+    font-size: 45px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.done .grid .compains h2 {
+    color: #1a807f;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+    font-size: 55px;
+    font-weight: 100;
+}
+
+.done .grid .compains h3 {
+    color: white;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.done .grid .compains h4 {
+    color: #1a807f;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* ==============Something about placicity============== */
+.placicity .flex {
+    display: flex;
+}
+
+.placicity .p-margin {
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.placicity .p-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.placicity .text {
+    flex: 3;
+}
+
+.placicity .right-img {
+    flex: 1;
+}
+
+.placicity .text h1 {
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.placicity .text p {
+    line-height: 30px;
+}
+
+.placicity .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
+}
+
+.placicity .grid .ideas {
+    display: flex;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.placicity .grid .ideas h5:hover {
+    color: rgb(35, 178, 178);
+}
+
+.placicity .flex .text .btn .btn-1:hover {
+    background: transparent;
+    color: rgb(27, 239, 239);
+}
+
+.placicity .flex .text .btn {
+    margin-top: 50px;
+}
+
+.placicity .flex .text .btn-1 {
+    height: 50px;
+    width: 200px;
+    background-color: rgb(27, 239, 239);
+    font-size: 17px;
+    color: white;
+    border: 2px solid aqua;
+}
+
+.placicity .flex .text .btn-2 {
+    height: 50px;
+    width: 200px;
+    color: rgb(27, 239, 239);
+    font-size: 17px;
+    background: transparent;
+    border: 2px solid rgb(27, 239, 239);
+}
+
+/* ==============Donate Us================ */
+.d-sec {
+    position: relative;
+    background-image: url(../images/banner4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+section::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.66);
+    z-index: -1;
+}
+
+section .d-container {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+section .tt h5 {
+    color: #17e7e4;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+section .tt h1 {
+    font-size: 50px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+section .tt p {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 150px;
+}
+
+section .tt button {
+    position: absolute;
+    bottom: 0px;
+    right: 680px;
+    height: 50px;
+    width: 180px;
+    border-radius: 15px;
+    background-color: rgb(34, 197, 197);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+section .tt button:hover {
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* ===============image-grid=================== */
+.image .margin {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.image .padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.image .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image .padding .images {
+    position: relative;
+}
+
+.image .padding .image-text {
+    margin-bottom: 20px;
+}
+
+.image .padding .images img {
+    height: auto;
+    max-width: 100%;
+}
+
+.image .padding .images img:hover {
+    opacity: 0.9;
+    transition: 0.3s all ease;
+}
+
+.image .image-text ul li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.image .image-text ul {
+    position: absolute;
+    top: 70%;
+    background: white;
+    border-radius: 5px;
+    z-index: 1;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.356);
+}
+
+.image .image-text ul li a span {
+    color: #17e7e4;
+    margin-right: 10px;
+}
+
+.image .image-text ul li a {
+    color: black;
+}
+
+.image .image-text ul li a:hover {
+    color: grey;
+}
+
+.image .padding .images h3 {
+    font-size: 25px;
+}
+
+.image .padding .images h3 a:hover {
+    color: #1cbcb9;
+}
+
+/*  <!-- ================Join Now============== --> */
+.join {
+    background-image: url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.join .padding {
+    padding: 50px 0px;
+}
+
+.join::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.66);
+    z-index: -1;
+}
+
+.join .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.join .grid .left-box {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+}
+
+.join .grid .right-box {
+    flex: 1;
+}
+
+.join .margin {
+    margin-top: 100px;
+}
+
+.join .txt h1 {
+    padding-top: 100px;
+    color: white;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.join .txt p {
+    font-size: 25px;
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.join .right-box button {
+    font-size: 20px;
+    color: #17e7e4;
+    background-color: rgb(38, 206, 206);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 180px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.join .right-box button:hover {
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+}
+
+.join .left-box {
+    position: relative;
+}
+
+.join .left-box span {
+    position: absolute;
+    color: #17e7e4;
+    top: 110px;
+    left: -60px;
+    font-size: 50px;
+}
+
+/* ==================what they said?============== */
+.d2 {
+    background-color: white;
+}
+
+.d2 .padding h4 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #17e7e4;
+}
+
+.d2 .padding h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.d2 .main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.d2 .main .grid:hover {
+    border: 2px solid aqua;
+    transition: 0.5s all ease-in-out;
+}
+
+.d2 .main .grid:hover img {
+    border: 2px solid #17e7e4;
+    transition: 0.5s all ease-in-out;
+}
+
+.d2 .main .grid {
+    padding: 40px 20px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.d2 .main .grid img {
+    position: absolute;
+    top: -25%;
+    left: 35%;
+    width: 38%;
+    border-radius: 50%;
+    border: 2px solid grey;
+    padding: 4px;
+    height: 50%;
+}
+
+.d2 .main .grid .text p {
+    padding: 30px;
+    margin-top: 30px;
+    word-spacing: 4px;
+    line-height: 18px;
+    padding-bottom: 20px;
+}
+
+.d2 .main .grid .text a {
+    color: #17e7e4;
+    font-size: 25px;
+}
+
+.d2 .main .grid .text a:hover {
+    color: black;
+}
+
+/* ==========footer============== */
+.px {
+    background-color: #042323;
+    color: white;
+}
+
+.px .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+.px .margin {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.px .main .about h1 {
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+.px .main .about p {
+    line-height: 25px;
+    padding-top: 5px;
+}
+
+.px .main .about a {
+    line-height: 50px;
+    color: white;
+    font-size: 17px;
+}
+
+.px .main .about input {
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.px .main .about button {
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #03c1be;
+    transition: 0.5 all ease-in-out;
+}
+
+.px .main .about button:hover {
+    color: white;
+    font-weight: bold;
+    background-color: #1daba9;
+    border: transparent;
+}
+
+.px .main .about .p10 {
+    display: flex;
+    gap: 20px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+/* ===========lower footer=============== */
+section .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .main .icon {
+    display: flex;
+    gap: 50px;
+}
+
+section .main .icon .socials {
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    background-color: #212121;
+    color: white;
+    display: grid;
+    place-content: center;
+    transition: 0.5s all ease-in-out;
+}
+
+section .main .icon .socials:hover {
+    background-color: #03c1be;
+    color: #212121;
+}
+
+/* ==============The End=============== */
