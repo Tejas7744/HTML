@@ -1,0 +1,83 @@
+@media (max-width:576px) {
+    .margin {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    header .flexbox .nav {
+        display: none;
+        flex: 2;
+    }
+    header .flexbox .navbtn button {
+        display: block;
+        height: 30px;
+        width: 30px;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-top: -4px;
+    }
+    header .flexbox .end-nav .search{
+        display: none;
+    }
+    header .flexbox .end-nav .login{
+        display: none;
+    }
+    header .flexbox .logo .fa-gem {
+        font-size: 20px;
+    }
+  /* =====================homepage======================= */
+  .homepage .content h1 {
+      font-size: 30px;
+      font-weight: normal;
+      color: white;
+      text-transform: capitalize;
+      padding-top: 170px;
+  }
+
+  .homepage .content p {
+      color: white;
+      font-size: 15px;
+      font-weight: normal;
+      padding-top: 30px;
+      padding-bottom: 50px;
+  }
+  /* ==========================grid======================== */
+  section .gridbox {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding-top: 50px;
+      gap: 20px;
+  }
+  /* ==================Facilities===============.*/
+  .f-main {
+      display: flex;
+      flex-direction: column;
+  }
+ /* =====================News====================== */
+ .news .news-details {
+     display: flex;
+     flex-direction: column;
+ }
+ /* =====================middle_sec====================== */
+ .middle-sec .content h1 {
+     font-size: 35px;
+ }
+/* ================Professional============== */
+.proffessional .flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===============Testimonials============== */
+.testimonials .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* =================Footer==================== */
+footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+}

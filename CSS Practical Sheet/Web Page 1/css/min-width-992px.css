@@ -1,0 +1,79 @@
+@media (min-width:992px) {
+    .margin {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    
+        header .flexbox .nav {
+            display: block;
+            flex: 2;
+        }
+    
+        header .flexbox .navbtn button {
+            display: none;
+            height: 30px;
+            width: 30px;
+            background-color: transparent;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: -4px;
+        }
+    
+        header .flexbox .end-nav .search {
+            display: block;
+        }
+    
+        header .flexbox .end-nav .login {
+            display: block;
+        }
+        /* ============homepage============== */
+        .homepage .content h1 {
+            font-size: 65px;
+            font-weight: normal;
+            color: white;
+            text-transform: capitalize;
+            padding-top: 170px;
+        }
+
+        .homepage .content p {
+            color: white;
+            font-size: 30px;
+            font-weight: normal;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+        /* ===============grid================== */
+         section .gridbox {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+        }       
+        /* ==================Facilities===============.*/
+        .f-main {
+            display: flex;
+            flex-direction: row;
+        }
+         /* =====================News====================== */
+    
+         .news .news-details .left-box .banner-1 .user a {
+             font-size: 18px;
+         }
+
+         .news .news-details .right-box .banner-2 .user a {
+             font-size: 18px;
+         }
+         .news .news-details .right-box .banner-3 .user a {
+             font-size: 18px;
+         }
+          /* ==================middle-sec=============== */
+                /* news inherited from min_width_768px */
+         /* ===============Testimonials============== */
+         
+         
+         
+        /* =================Footer==================== */
+          footer .footer-grid {
+              display: grid;
+              grid-template-columns: 2fr 1fr 1fr 1fr;
+              gap: 30px;
+          }
+      }

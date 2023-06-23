@@ -1,0 +1,36 @@
+@media (min-width:1200px) {
+    .margin {
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+    header .flexbox .logo .fa-gem {
+        font-size: 40px;
+        }
+     /* ===============grid================== */
+         section .gridbox {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+        }                  
+    /* ==================Facilities===============.*/
+        /* .facilities-main inherited from min-width-992px  */
+    
+     /* =====================News====================== */
+        /* news inherited from min_width_992px */
+    
+    /* ==================middle-sec=============== */
+         /* news inherited from min_width_768px */
+        .proffessional .flexbox {
+            display: flex;
+            flex-direction: row;
+        }
+        /* ===============Testimonials============== */
+        .testimonials .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        
+        /* =================Footer==================== */
+        
+     }
+    

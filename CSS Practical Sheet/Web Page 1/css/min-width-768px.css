@@ -1,0 +1,70 @@
+@media (min-width:768px) {
+    .margin {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    header .flexbox .nav {
+        display: none;
+        flex: 2;
+    }
+
+    header .flexbox .navbtn button {
+        display: block;
+        height: 30px;
+        width: 30px;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-top: -4px;
+    }
+
+    header .flexbox .end-nav .search {
+        display: none;
+    }
+
+    header .flexbox .end-nav .login {
+        display: none;
+    }
+
+    /* ================homepage=============== */
+    .homepage .content h1 {
+        font-size: 50px;
+    }
+
+    .homepage .content p {
+        font-size: 25px;
+    }
+
+  /* ===============grid================== */
+    section .gridbox {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    /* ==================Facilities===============.*/
+    .f-main {
+        display: flex;
+        flex-direction: column;
+    }
+   /* =====================News====================== */
+   .news .news-details {
+       display: flex;
+       flex-direction: row;
+   }
+/* =====================middle_sec====================== */
+.middle-sec .content h1 {
+    font-size: 50px;
+}
+/* ===============Testimonials============== */
+
+.testimonials .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonials .titles h1 {
+    font-size: 40px;
+}
+
+/* =================Footer==================== */
+}
