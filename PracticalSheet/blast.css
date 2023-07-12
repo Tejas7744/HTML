@@ -1,0 +1,179 @@
+/*menu*/
+nav {
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    user-select: none;
+    transform: translate3d(25px, -25px, 0);
+    transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+    z-index: 2;
+}
+a{
+    text-decoration: none;
+}
+div{
+    color: black;
+}
+nav.top-right {
+    top: 140px;
+    right: 550px;
+}
+
+.disc {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 40px;
+    padding-top: 10px;
+    border-radius: 250px;
+    transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
+    pointer-events: none;
+    opacity: 0;
+    cursor: pointer;
+    transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
+}
+
+.disc div {
+    transform: rotate(180deg);
+}
+
+.open .disc {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.l1 {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(68, 197, 249, 0.837);
+    transition-delay: 0s;
+}
+
+.open .l1 {
+    transition-delay: 0s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+}
+
+.open .l1.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l2 {
+    top: 70px;
+    left: 70px;
+    right: 70px;
+    bottom: 70px;
+    background: #07a7f7;
+    transition-delay: 0.1s;
+}
+
+.open .l2 {
+    transition-delay: 0.1s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+}
+
+.open .l2.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l3 {
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    background: #f903af;
+    transition-delay: 0.2s;
+}
+
+.open .l3 {
+    transition-delay: 0.2s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+}
+
+.open .l3.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l4 {
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    bottom: 150px;
+    background: #f106ce;
+    transition-delay: 0.3s;
+}
+
+.open .l4 {
+    transition-delay: 0.3s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+}
+
+.open .l4.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l5 {
+    top: 200px;
+    left: 200px;
+    right: 200px;
+    bottom: 200px;
+    background: #04d1b6;
+    transition-delay: 0.4s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-name: Floatingx2;
+}
+
+.open .l5 {
+    transition-delay: 0.4s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+}
+
+.open .l5.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.toggle {
+    line-height: 100px;
+    padding: 0;
+    width: 100px;
+    background: gold;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition-delay: 0s;
+}
+
+.open .toggle {
+    transform: rotate3d(0, 0, 1, 0deg);
+}
+
+.open .T-6.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.T-6 {
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    background: rgb(6, 171, 237);
+    transition-delay: 0.2s;
+}
+/* =========================================== */
+@media(max-width:768px) {
+    nav.top-right {
+        right: -170px;
+    }
+}
