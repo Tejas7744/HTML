@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background: rgb(72, 228, 72);
+        }
+        .reg
+        {
+            border: 2px solid black;
+            text-align: center;
+            width: 70%;
+            margin: auto;
+            background-color:white;
+        }
+        .row
+        {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            padding: 16px;
+        }
+        h1
+        {
+            padding: 0px 0px 20px 0px;
+        }
+        input[type="text"],[type="date"], [type="password"]
+        {
+            height: 25px;
+            width: 400px;
+            padding: 0px 10px;
+        }
+        textarea
+        {
+            padding: 0px 10px;
+        }
+        span
+        {
+            color: red;
+        }
+        button
+        {
+            height: 40px;
+            width: 400px;
+            border-radius: 0px 50px;
+            color: white;
+            background-color: rgba(15, 11, 248, 0.897);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="reg">
+        <h1>Registration For Job</h1>
+        <form action="#">
+                <!-- first name Row-1 -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">First Name:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="msg" onblur="return formvalidation(this,'msg-1')" onkeyup="return regex_name(this,'msg-1')" placeholder="Enter First Name">
+                </div>
+                <div class="col-3">
+                    <span id="msg-1"></span>
+                </div>
+            </div>
+                <!-- middle name row-2 -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Middle Name:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="msg-01" onblur="return formvalidation(this,'msg-2')" onkeyup="return regex_name(this,'msg-2')" placeholder="Enter Middle Name">
+                </div>
+                <div class="col-3">
+                    <span id="msg-2"></span>
+                </div>
+            </div>
+                <!-- last name Row-3 -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Last name:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="msg-03" onblur="return formvalidation(this,'msg-3')" onkeyup="return regex_name(this,'msg-3')" placeholder="Enter Last Name">
+                </div>
+                <div class="col-3">
+                    <span id="msg-3"></span>
+                </div>
+            </div>
+                 <!-- Address Row-4  -->
+             <div class="row">
+                 <div class="col-1">
+                    <label for="">Address:</label>
+                 </div>
+                 <div class="col-2">
+                    <textarea name="" id="msg-04" cols="45" rows="05"  onblur="return formvalidation(this,'msg-4')" onkeyup="return add_fn()" placeholder="Fill The Address"></textarea>
+                 </div>
+                 <div class="col-3">
+                    <span id="msg-4"></span>
+                 </div>
+            </div>
+                 <!-- DOB Row-5 -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Date Of Birth:</label>
+                </div>
+                <div class="col-2">
+                    <input type="date" id="msg-05" onblur="return formvalidation(this,'msg-5')">
+                </div>
+                <div class="col-3">
+                    <span id="msg-5"></span>
+                </div>
+            </div>
+            <!-- Gender Row-6 -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Gender:</label>
+                </div>
+                <div class="col-2">
+                    <input type="radio" name="gen" id="male">Male
+                    <input type="radio" name="gen" id="female">Female
+                </div>
+                <div class="col-3">
+                    <span id="msg-6"></span>
+                </div>
+            </div>
+            <!-- Select Row-7 -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Experience</label>
+                </div>
+                <div class="col-2">
+                    <select name="" id="exp"  onblur="return formvalidation(this,'msg-7')">
+                        <option value="-1">---select---</option>
+                        <option value="">HTML</option>
+                        <option value="">CSS</option>
+                        <option value="">Javascript</option>
+                        <option value="">J-Querry</option>
+                        <option value="">Bootstrap</option>
+                        <option value="">Adv.javascript</option>
+                        <option value="">React js</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <span id="msg-7"></span>
+                </div>
+            </div>
+            <!--Mobile Row-8 -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Mobile No:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Enter Mobile No.(+91)" id="mobile"  onblur="return formvalidation(this,'mobilee')">
+                </div>
+                <div class="col-3">
+                    <span id="mobilee"></span>
+                </div>
+            </div>
+            <!-- Mail Row-9 -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Email:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="mail" placeholder="Enter Mail"  onblur="return formvalidation(this,'maill')" onkeyup="return mail_fn()">
+                </div>
+                <div class="col-3">
+                    <span id="maill"></span>
+                </div>
+            </div>
+            <!-- Pass Row-10 -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Password:</label>
+                </div>
+                <div class="col-2">
+                    <input type="password" id="pass" placeholder="Enter Password"  onblur="return formvalidation(this,'passs')">
+                </div>
+                <div class="col-3">
+                    <span id="passs"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <input type="checkbox" onclick="return showpass()">
+                    <label for="">Show Password:</label>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <button type="submit" onclick="return f_valid_fn()">Register</button>
+        </form>
+    </div> 
+
+    <script src="formvalidation.js"></script>
+</body>
+</html>

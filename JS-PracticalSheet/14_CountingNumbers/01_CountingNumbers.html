@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Numbers</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins,sans-serif;
+        }
+        body{
+            background-color: #121317;
+
+        }
+        .wrapper{
+            border: 1px solid white;
+            position: absolute;
+            width: 80vw;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+        .container{
+            height: 28vmin;
+            width: 28vmin;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 1em 0;
+            position: relative;
+            font-size: 16px;
+            border-radius: 0.5rem;
+            background-color: #21242b;
+            border-bottom: 10px solid rgb(8, 235, 159);
+        }
+        i {
+            color: rgb(8, 235, 159);
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        span.num{
+            color:#ffffff;
+            display: grid;
+            place-content: center;
+            font-weight: 600;
+            font-size: 3rem;
+        }
+        span.text{
+            color: #e0e0e0;
+            font-size: 1em;
+            text-align: center;
+            pad: 0.7em 0;
+            font-weight: 400;
+            line-height: 0;
+        }
+    </style>
+</head>
+<body>
+   <div class="wrapper">
+        <div class="container">
+            <i class="fa-solid fa-utensils"></i>
+            <span class="num" data-val="400">000</span>
+            <span class="text">Food Delivered</span>
+        </div>
+        <div class="container">
+            <i class="fa-solid fa-smile-beam"></i>
+            <span class="num" data-val="340">000</span>
+            <span class="text">Happy Customers</span>
+        </div>
+        <div class="container">
+            <i class="fa-solid fa-list"></i>
+            <span class="num" data-val="225">000</span>
+            <span class="text">Menu Items</span>
+        </div>
+        <div class="container">
+            <i class="fa-solid fa-star"></i>
+            <span class="num" data-val="280">000</span>
+            <span class="text">Five Stars</span>
+        </div>
+   </div> 
+   <script>
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 4000;
+
+    valueDisplays.forEach((valueDisplay) => {
+        let startValue = 0;
+        let endValue =  parseInt(valueDisplay.getAttribute("data-val"));
+        let duration = Math.floor(interval / endValue);
+        let counting = setInterval(function (){
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if(startValue == endValue){
+                clearInterval(counting);
+            }
+        }, duration)
+    });
+   </script>
+</body>
+</html>

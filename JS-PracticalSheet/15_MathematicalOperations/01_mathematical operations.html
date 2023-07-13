@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 250px;
+            width: 500px;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .row{
+            display: flex;
+            gap: 20px;
+            align-items: baseline;
+            justify-content: center;
+        }
+        .container .class .row .col-2 input{
+            height: 20px;
+            width: 300px;
+            margin-top: 20px;
+        }
+         .container .class .row .col-3 input{
+            height: 20px;
+            width: 300px;
+            margin-left: -5px;
+            margin-top: 20px;
+         }
+         .container .class .row .col-1{
+            margin-top: 20px;
+            margin-left: 20px;
+         }
+         .sign-color{
+            height: 30px;
+            width: 40px;
+            margin-top: 20px;
+            font-size: 20px;
+         }
+         .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 120px;
+            padding-top: 30px;
+         }
+         .div{
+            color: blue;
+            font-weight: bold;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="class">
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Enter 1st Number:</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" id="call">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Enter 2nd Number:</label>
+                </div>
+                <div class="col-3">
+                    <input type="number" id="back">
+                </div>
+            </div>
+            <!-- <div class="row item">
+                <div class="col-1">
+                    <label for="">Answer Is:</label>
+                </div>
+                <div class="col-3">
+                    <div class="div" id="msg"></div>
+                </div>
+            </div> -->
+        </div>
+        <div class="buttons">
+            <div class="div-1">
+                <input type="button" value="+" onclick="checkval_fn() += '+' " class="sign-color">
+                    <input type="button" value="*" onclick="heckval_fn() += '*' " class="sign-color">
+                    <input type="button" value="-" onclick="ckval_fn() += '-' " class="sign-color">
+                    <input type="button" value="/" onclick="kval_fn() += '/' " class="sign-color">
+                    <input type="button" value="%" onclick="val_fn() += '%' " class="sign-color">
+            </div>       
+            <div class="row item">
+                <div class="col-1">
+                    <label for="">Answer Is:</label>
+                </div>
+                <div class="col-3">
+                    <div class="div" id="msg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+        <script>
+            // 01 
+            function checkval_fn(){
+                let input = document.getElementById("call").value;
+               let output = document.getElementById("back").value;
+
+                let result = parseFloat(input) + parseFloat(output);
+                document.getElementById("msg").innerHTML = result
+                return false;
+            }
+            // 02
+            function heckval_fn(){
+                let soul = document.getElementById("call").value;
+                let mate = document.getElementById("back").value;
+
+                let result = parseFloat(soul) * parseFloat(mate);
+                document.getElementById("msg").innerHTML = result
+                return false;
+            }
+            // 03
+            function ckval_fn(){
+                let we = document.getElementById("call").value;
+                let sometimes = document.getElementById("back").value;
+
+                let result = parseFloat(we) - parseFloat(sometimes);
+                document.getElementById("msg").innerHTML = result
+                return false;
+            }
+
+            // 04
+            function kval_fn(){
+                let mobi = document.getElementById("call").value;
+                let kobi = document.getElementById("back").value;
+
+                let result = parseFloat (mobi) / parseFloat(kobi);
+                document.getElementById("msg").innerHTML = result
+                return false;
+            }
+            // 05
+            function val_fn(){
+                let jhang = document.getElementById("call").value;
+                let paang = document.getElementById("back").value;
+
+                let result = parseFloat (jhang) % parseFloat (paang);
+                document.getElementById("msg").innerHTML = result
+                return false;
+            }
+        </script>
+</html>

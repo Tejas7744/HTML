@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Password</title>
+    <style>
+        .border{
+            height: 80px;
+            width: 300px;
+            padding: 20px;
+            margin: auto;
+            margin-top: 250px;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="#" class="border">
+        <label for="">Enter Password:</label>
+        <input type="password" id="pass">
+        <br> <br>
+        <input type="checkbox" onclick="img()">
+        <label for="">Show Password:</label>
+    </form>
+    <script>
+        function img() {
+            var word = document.getElementById("pass")
+            if (pass.type == "password"){
+                pass.type = "text"
+            }else{
+                pass.type ="password"
+            }
+        }
+    </script>
+    <!-- <button onclick="hide_show">click here</button> -->
+    <!-- <form action="">
+        <label for="">Pass:</label>
+        <input type="password" id="or">
+        <br><br>
+        <label for="">passcode</label>
+        <input type="checkbox" onclick="hide_show()">
+    </form>
+    <script>
+        function hide_show(){
+        var num = document.getElementById("or");
+        if (num.type == "password"){
+            num.type = "text"
+        }else {
+            num.type = "password"
+        }
+    }
+    </script> -->
+     <!-- <form action="">
+        <label for="">Password</label>
+        <input type="password" id="not">
+        <br><br>
+        <input type="checkbox" onclick="tej()" id="shoe_pass">
+        <label for="">Showpass</label>
+    </form>
+    <script>
+        function tej(){
+            var salt = document.getElementById("not");
+            if(salt.type =="password"){
+                salt.type = "text"
+            }else{
+                salt.type ="password"
+            }
+        } -->
+         <!-- // using addevent listner
+        // var showpass = document.getElementById("shoe_pass")
+        // showpass.addEventListener("click", function(){
+        //     var salt = document.getElementById("not");
+        //      if (salt.type == "password") {
+        //         salt.type = "text"
+        //     }else{
+        //         salt.type ="password"
+        //     }
+        // }) -->
+
+    </script>
+   
+</body>
+</html>

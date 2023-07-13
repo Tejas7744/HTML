@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths table</title>
+    <style>
+        .div1{
+            height: auto;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <!-- <style>
+        .div1{
+            height: auto;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style> -->
+    <!-- <style>
+        .call{
+            height: auto;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style> -->
+    <!-- <style>
+        .div2{
+            height: auto;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style> -->
+    <!-- <style>
+        .div3{
+            height: auto;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter Table Number:</label>
+        <input type="text" id="border">
+        <button onclick="return ganu()">Click Here</button>
+    </form>
+    <br>
+    <div class="div3"></div>
+    <script>
+        function ganu(){
+            let g = document.getElementById("border").value;
+            let div = document.querySelector(".div3");
+            if (g == ""){
+                alert("Enetr Any Value");
+            }else{
+                var res = "";
+                for (let i = 1; i <= 10; i++){
+                    res = res + "<p>" + g + "*" + i + "=" + g * i + "</p>"
+                }
+                div.innerHTML = res;
+                return false;
+            }
+        }
+    </script> -->
+    <form action="">
+        <label for="">Enter Table No:</label>
+        <input type="text" id="number">
+        <button onclick="return display_table()">Display</button>
+    </form>
+    <br>
+    <div class="div1"></div>
+    <script>
+        function display_table(){
+            let b = document.getElementById("number").value;
+            let div = document.querySelector(".div1");
+            if( b == ""){
+                alert("Enter Any Value");
+            }else{
+                var res ="";
+                for(let i = 1; i <= 10; i++){
+                    res = res + "<p>" + b + "*" + i + "=" + b * i + "</p>"
+                }
+                div.innerHTML = res
+                return false
+            }
+        }
+    </script> 
+   
+    <!-- <form action="">
+        <label for="">Enter Table Number:</label>
+        <input type="text" id="number">
+        <button onclick="return tej()">Display</button>
+    </form>
+   <br>
+   <div class="call"></div>
+   <script>
+    function tej(){
+        let c = document.getElementById("number").value;
+        let call = document.querySelector(".call");
+        if (c == ""){
+            alert("Enter any value");
+        }else{
+            var res ="";
+            for(let i = 1; i <= 10; i++ ){
+                res = res + "<p>" + c + "*" + i + "=" + c * i + "</p>"
+            }
+            call.innerHTML = res
+            return false
+        }
+    }
+   </script> -->
+   <!-- <form action="">
+    <label for="">Enter Table Number:</label>
+    <input type="text" id="call">
+    <button onclick=" return raj()">Click Here</button>
+   </form>
+   <br>
+   <div class="div2"></div>
+   <script>
+    function raj(){
+        let z = document.getElementById("call").value;
+        let div2 = document.querySelector(".div2");
+        if(z ==""){
+            alert ("Enetr Any Value");
+        }else{
+            var res ="";
+            for(let i = 1; i <= 10; i++){
+                res = res + "<p>" + z + "*" + i + "=" + z * i + "</p>"
+            }
+            div2.innerHTML = res;
+            return false;
+        }
+    }
+    </script>
+   <style>
+    .div4{
+        height: auto;
+        width: 300px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+   </style>
+   <form action="">
+    <label for="">Enter Table Number:</label>
+    <input type="text" id="shubh">
+    <button onclick="return royal()">Click</button>
+   </form>
+   <br>
+   <div class="div4"></div>
+   <script>
+    function royal(){
+        var y = document.getElementById("shubh");
+        var div4 = document.querySelector(".div4");
+        if(y == ""){
+            alert("Enetr Any Value");
+        }else{
+            var res ="";
+            for(let i = 1; i <= 10; i++){
+                res = res + "<p>" + y + "*" + i + "=" + y * i + "</p>"
+            }
+             div4.innerHTML = res;
+            return false;
+        }
+    }
+   </script>
+</body>
+</html>

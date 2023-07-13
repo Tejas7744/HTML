@@ -1,0 +1,68 @@
+/* @import url('https://fonts.goggleapis.com/css2?family&poppins&display=swap');
+@import url('https://fonts.goggleapis.com/css2?family=Redressed&display=swap'); */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #eee;
+}
+
+.nav-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: rgba(251, 13, 171, 0.867);
+    position: absolute;
+    height: 745px;
+    width: 300px;
+    box-sizing: border-box;
+    transform: translate(-100%);
+    transition: 0.9s all ease-in-out;
+}
+
+.show_sidebar {
+    transform: translate(0%) !important;
+}
+
+ul.links {
+    margin: 0px;
+    padding: 20px;
+    list-style: none;
+}
+
+ul.links li a {
+    color: #eee;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+ul.socials-links {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    /* margin-top: 0px; */
+}
+
+ul.socials-links li {
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 20px;
+}
+
+ul.socials-links li a {
+    color: rgba(251, 13, 171, 0.867);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkSheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div><b><span>Enter Marks</span></b></div>
+            <div class="book1">
+                <div class="col-1">
+                    <label>Computer</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" placeholder="Marks" id="bookOne">
+                </div>
+            </div>
+            <div class="book2">
+                <div class="col-1">
+                    <label>Physics</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" placeholder="Marks" id="bookTwo">
+                </div>
+            </div>
+            <div class="book3">
+                <div class="col-1">
+                    <label>Chemistry</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" placeholder="Marks" id="bookThree">
+                </div>
+            </div>
+            <div class="book4">
+                <div class="col-1">
+                    <label>Maths</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" placeholder="Marks" id="bookFour">
+                </div>
+            </div>
+            <div class="book5">
+                <div class="col-1">
+                    <label>Geometry</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" placeholder="Marks" id="bookFive">
+                </div>
+            </div>
+            <div class="book6">
+                <div class="col-1">
+                    <label>Biology</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" placeholder="Marks" id="bookSix">
+                </div>
+            </div>
+            <div class="book7">
+                <div class="col-1">
+                    <label>Algebra</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" placeholder="Marks" id="bookSeven">
+                </div>
+            </div>
+            <button class="c1" onclick="calculate()">Calculate</button>
+        </div>
+        <table class="t-1">
+            <tr class="row">
+                <td>Total Marks:=></td>
+                <td>700</td>
+            </tr>
+            <tr class="row">
+                <td>ObtainedMarks:=></td>
+                <td id="obtain"></td>
+            </tr>
+            <tr class="row">
+                <td>Percentage:=></td>
+                <td id="per"></td>
+            </tr>
+            <tr class="row">
+                <td>Grade:=></td>
+                <td id="grade"></td>
+            </tr>
+            <tr class="row">
+                <td>Result/Remarks:=></td>
+                <td id="remarks"></td>
+            </tr>
+        </table>
+    </div>
+    <Script type="text/javascript" src="grade.js"></Script>
+</body>
+</html>
