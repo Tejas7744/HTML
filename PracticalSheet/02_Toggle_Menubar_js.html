@@ -17,19 +17,23 @@
             background-size: cover;
             background-repeat: no-repeat;
             padding-bottom: 745px;
-            /* height: 700px; */
-            position: relative;
+            /* height: 730px; */
+            position: fixed;
+            width: 100%;
         }
         .fa-bars{
             font-size: 25px;
-            height: 50px;
-            width: 50px;
+            height: 40px;
+            width: 40px;
+            border-radius: 5px;
             border: 2px solid black;
-            background-color: rgb(37, 146, 242);
+            background-color: rgb(8, 132, 240);
+            color: white;
+            font-size: 25px;
             display: grid;
             place-content: center;
             position: absolute;
-            left: 150px;
+            left: 100px;
             top: 05px;
         }
         .fa-close{
@@ -46,18 +50,38 @@
             top: 5px;
         }
         .nav{
-            position: absolute;
+            position: fixed;
             top: 0px;
             background-color: aqua;
             padding: 50px;
             height: 730px;
             width: 250px;
             left: -250px;
+            transform: scale(0);
         }
-        ul{
+        .nav ul{
             list-style-type: none;
         }
         .nav ul li{
+            width: 200px;
+            padding: 25px;
+        }
+
+        /* Create Random Class */
+        .navigate{
+            position: fixed;
+            top: 0px;
+            background-color: aqua;
+            padding: 50px;
+            height: 745px;
+            width: 250px;
+            left: 0px;
+            transform: scale(1);
+        }
+        .navigate ul{
+            list-style-type: none;
+        }
+        .navigate ul li{
             width: 200px;
             padding: 25px;
         }
@@ -67,12 +91,14 @@
     <div class="main">
         <div class="container">
             <div class="theme">
-                <div class="fa-solid fa-bars"></div>
+                <button id="tbtn">
+                    <span class="fa-solid fa-bars"></span>
+                </button>
             </div>
         </div>
     </div>
     <div class="nav">
-        <button>
+        <button id="cbtn">
             <div class="fa-solid fa-close"></div>
         </button>
         <ul>
