@@ -1,11 +1,10 @@
-    let tbtn = document.querySelector(".tbtn");
-    let nav = document.querySelector(".navbar");
-    let closebtn = document.querySelector(".closebtn");
+let btn = document.getElementById("tbtn");
+let btn_1 = document.querySelector(".nav");
 
-    tbtn.addEventListener("click", function(){
-        nav.classList.add("navigate");
-    })
-
-    closebtn.addEventListener("click", function(){
-        nav.classList.remove("navigate");
-    })
+btn.addEventListener("click", function () {
+  btn_1.classList.add("navigate");
+});
+let cbtn = document.getElementById("cbtn");
+cbtn.addEventListener("click", function () {
+  btn_1.classList.remove("navigate");
+});
