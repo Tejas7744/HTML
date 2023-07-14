@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="swiper gallery-top">
+    <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="image1.jpg"></div>
+            <div class="swiper-slide"><img src="image2.jpg"></div>
+            <div class="swiper-slide"><img src="image3.jpg"></div>
+            <div class="swiper-slide"><img src="image4.jpeg"></div>
+            <div class="swiper-slide"><img src="image5.jpg"></div>
+            <div class="swiper-slide"><img src="image6.jpg"></div>
+    </div>
+
+
+    <!-- Add Arrows -->
+    
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+     </div>
+
+    <div class="swiper gallery-thumbs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image1.jpg"></div>
+            <div class="swiper-slide"><img src="image2.jpg"></div>
+            <div class="swiper-slide"><img src="image3.jpg"></div>
+            <div class="swiper-slide"><img src="image4.jpeg"></div>
+            <div class="swiper-slide"><img src="image5.jpg"></div>
+            <div class="swiper-slide"><img src="image6.jpg"></div>
+        </div>
+    </div>     
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper -->
+    <script type="module">
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs
+            },
+             autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
